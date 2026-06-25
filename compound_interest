@@ -1,0 +1,25 @@
+# Compound Interest Calculator
+
+# Example Input:
+# Enter the principal amount: 10000
+# Enter the annual interest rate (in %): 5
+# Enter the time (in years): 2
+# Enter the number of times interest is compounded per year: 4
+
+# Example Output:
+# Final Amount = 11038.13
+# Compound Interest = 1038.13
+
+principal = float(input("Enter the principal amount: "))
+rate = float(input("Enter the annual interest rate (in %): "))
+time = float(input("Enter the time (in years): "))
+n = int(input("Enter the number of times interest is compounded per year: "))
+
+# Compound interest formula
+amount = principal * (1 + (rate / 100) / n) ** (n * time)
+
+# Calculate compound interest
+compound_interest = amount - principal
+
+print(f"\nFinal Amount = {amount:.2f}")
+print(f"Compound Interest = {compound_interest:.2f}")
