@@ -12,10 +12,10 @@ else:
     print("Perimeter of the rectangle =", perimeter)
 
 
-
+'''
 Enter the length of the rectangle: 5
 Enter the width of the rectangle: 2
 Area of the rectangle = 10.0
 Perimeter of the rectangle = 14.0
 
-=== Code Execution Successful ===
+=== Code Execution Successful ==='''
