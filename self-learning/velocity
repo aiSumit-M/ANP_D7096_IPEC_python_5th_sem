@@ -1,0 +1,4 @@
+'''write a program to calculate velocity when distance and time is given'''
+#taking input from user
+
+userdistance = float(input("Enter the distance (in km): "))
