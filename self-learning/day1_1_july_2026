@@ -1,0 +1,37 @@
+Question:
+If we are creating a blank list, then what will be its size in memory?
+What is the initial capacity of a blank list in Python?
+
+Answer:
+
+When we create a blank list in Python using:
+
+list1 = []
+
+the list does not have a fixed capacity like arrays in some other programming languages.
+
+Theory:
+
+• A blank list initially contains 0 elements.
+• Its length is 0, which can be checked using len(list1).
+• Python allocates a small amount of memory internally for the list object itself.
+• The exact memory size and initial capacity depend on the Python implementation and version.
+• As new elements are added using append(), Python automatically increases the list's capacity when needed.
+• Therefore, programmers do not need to specify the size of a list in advance.
+
+Example:
+
+list1 = []
+
+print(len(list1))      # Output: 0
+
+Output:
+0
+
+Conclusion:
+
+Initial Number of Elements = 0
+
+Initial Capacity = Automatically managed by Python (implementation dependent)
+
+Memory Size = Reserved internally by Python and grows automatically as elements are added.
