@@ -20,7 +20,7 @@ for i in range(1,11):
     name = input("Enter product name "+str(i)+" :")
     price = float(input("Enter product price :"))
 
-    #store product name and price in the list
+    #store product name and price
     products.append((name,price))
 
 #create tuple from the list
@@ -28,39 +28,25 @@ products = tuple(products)
 
 print("--------------------------------------------")
 
-#initialize variables
-lowest_name = products[0][0]
-lowest_price = products[0][1]
-
-highest_name = products[0][0]
-highest_price = products[0][1]
+#to find lowest and highest price product
+lowest = min(products, key=lambda product: product[1])
+highest = max(products, key=lambda product: product[1])
 
 count = 0
 
-#to find lowest price, highest price and count
+#to count products having price greater than 4000
 for product in products:
 
-    name = product[0]
-    price = product[1]
-
-    if(price < lowest_price):
-        lowest_price = price
-        lowest_name = name
-
-    if(price > highest_price):
-        highest_price = price
-        highest_name = name
-
-    if(price > 4000):
+    if(product[1] > 4000):
         count = count + 1
 
-print("Lowest Price Product :", lowest_name)
-print("Price :", lowest_price)
+print("Lowest Price Product :", lowest[0])
+print("Price :", lowest[1])
 
 print("--------------------------------------------")
 
-print("Highest Price Product :", highest_name)
-print("Price :", highest_price)
+print("Highest Price Product :", highest[0])
+print("Price :", highest[1])
 
 print("--------------------------------------------")
 
@@ -68,35 +54,26 @@ print("Number of Products with Price Greater than ₹4000 :", count)
 
 #----------------------------------------------------
 '''Output :
-Enter product name 1 :Mouse
-Enter product price :800
-
-Enter product name 2 :Keyboard
-Enter product price :1500
-
-Enter product name 3 :Monitor
-Enter product price :12000
-
-Enter product name 4 :Speaker
-Enter product price :3500
-
-Enter product name 5 :Printer
-Enter product price :9000
-
-Enter product name 6 :Laptop
-Enter product price :65000
-
-Enter product name 7 :Pen Drive
-Enter product price :700
-
-Enter product name 8 :Scanner
-Enter product price :5000
-
-Enter product name 9 :Webcam
-Enter product price :2500
-
-Enter product name 10 :UPS
-Enter product price :4500
+Enter product name 1 : Mouse
+Enter product price : 800
+Enter product name 2 : Keyboard
+Enter product price : 1500
+Enter product name 3 : Monitor
+Enter product price : 12000
+Enter product name 4 : Speaker
+Enter product price : 3500
+Enter product name 5 : Printer
+Enter product price : 9000
+Enter product name 6 : Laptop
+Enter product price : 65000
+Enter product name 7 : Pen Drive
+Enter product price : 700
+Enter product name 8 : Scanner
+Enter product price : 5000
+Enter product name 9 : Webcam
+Enter product price : 2500
+Enter product name 10 : UPS
+Enter product price : 4500
 --------------------------------------------
 Lowest Price Product : Pen Drive
 Price : 700.0
