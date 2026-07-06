@@ -26,7 +26,7 @@ print("First Name :", firstname)
 
 #----------------------------------------------------
 '''Output :
-Enter your complete name : Sumit Kumar Mandal
+Enter your complete name : Sumit Mandal
 --------------------------------------------
 First Name : Sumit
 --------------------------------------------'''
