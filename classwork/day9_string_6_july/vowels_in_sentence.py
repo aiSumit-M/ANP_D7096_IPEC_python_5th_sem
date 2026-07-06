@@ -10,19 +10,19 @@ Display the total number of vowels.
 #input sentence from the user
 sentence = input("Enter a sentence :")
 
-count = 0
+vowels = 0
 
 #to count vowels
-for ch in sentence:
+for x in sentence:
 
-    if(ch=='a' or ch=='e' or ch=='i' or ch=='o' or ch=='u' or
-       ch=='A' or ch=='E' or ch=='I' or ch=='O' or ch=='U'):
-
-        count = count + 1
+    if(x=='a' or x=='e' or x=='i' or x=='o' or x=='u' or
+       x=='A' or x=='E' or x=='I' or x=='O' or x=='U'):
+        #increment vowel count as
+        vowels = vowels + 1
 
 print("--------------------------------------------")
 
-print("Total Number of Vowels :", count)
+print("Total Number of Vowels :", vowels)
 
 #----------------------------------------------------
 '''Output :
