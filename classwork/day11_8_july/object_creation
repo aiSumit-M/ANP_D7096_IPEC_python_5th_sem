@@ -1,0 +1,13 @@
+class Rectangle:
+    #member variable
+    length = 0
+    breadth = 0
+    #Method to initialize data
+    def initialize(self,l,b):
+        self.leangth = l
+        self.breadth = b
+    #methods to display data
+    def display_data(self):
+        print("---------Rectangle---------")
+        print("Length :",self.length,"cm")
+        print("Breadth:",self.breadth,"cm")
